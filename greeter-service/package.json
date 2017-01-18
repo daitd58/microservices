@@ -1,0 +1,20 @@
+{
+  "name": "greeter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha test.js"
+  },
+  "keywords": [],
+  "author": "Fatih Aydinoglu <fatihaydinoglu@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "seneca": "^3.2.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
