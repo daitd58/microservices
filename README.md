@@ -1,5 +1,7 @@
 # Node.js Microservices with Seneca and Docker
 
+More detailed explanation can be found in this blog post: [http://fullstackdeveloper.info/node-js-microservices-with-seneca-and-docker/](http://fullstackdeveloper.info/node-js-microservices-with-seneca-and-docker/)
+
 ### Project structure
 
 Project includes two Seneca services and one Express web server. 
