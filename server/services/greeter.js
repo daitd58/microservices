@@ -2,7 +2,7 @@ const seneca = require('seneca')();
 const Promise = require('bluebird');
 
 // Convert act to Promise
-const act = Promise.promisify(seneca.client({ host: 'greeter-service', port: 9001 }).act, { context: seneca });
+const act = Promise.promisify(seneca.client({ host: 'greeter-service' }).act, { context: seneca });
 
 // Service methods
 const SAY_HELLO = { role: 'greeter', cmd: 'sayHello' };

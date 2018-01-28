@@ -2,7 +2,7 @@ const seneca = require('seneca')();
 const Promise = require('bluebird');
 
 // Convert act to Promise
-const act = Promise.promisify(seneca.client({ host: 'adder-service', port: 9002 }).act, { context: seneca });
+const act = Promise.promisify(seneca.client({ host: 'adder-service' }).act, { context: seneca });
 
 // Service methods
 const SUM = { role: 'adder', cmd: 'sum' };

@@ -16,7 +16,7 @@ describe('Greeter service', () => {
                 cmd: 'sayHello',
                 name: 'Alex'
             }, function (error, response) {
-                expect(response.result).to.eql('Hello B');
+                expect(response.result).to.eql('Hello Alex');
                 done();
             });
         });
