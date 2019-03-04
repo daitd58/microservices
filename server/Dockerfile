@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk update && apk add nodejs && rm -rf /var/cache/apk/*
+RUN apk update && apk add --update nodejs nodejs-npm && rm -rf /var/cache/apk/*
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
