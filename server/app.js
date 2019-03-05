@@ -1,5 +1,5 @@
 const express = require('express');
-
+const seneca = require('seneca')();
 const app = express();
 
 // query params: ?name=Alex&number1=10&number2=26
