@@ -4,7 +4,7 @@ const app = express();
 
 // query params: ?name=Alex&number1=10&number2=26
 app.get('/adder', function (req, res) {
-    seneca.client({ host: 'adder-service' }).act({ms: 'adder', query: req.query}, function (err, result) {
+    seneca.client({ host: 'adder-service' }).act({ms: 'adder', path: '/login', query: req.query}, function (err, result) {
         res.send({
             err: err,
             result: result
