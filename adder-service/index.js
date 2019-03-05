@@ -1,7 +1,7 @@
 function adder () {
-  this.add('ms:adder', function (msg, respond) {
-    console.log('msg', msg);
-    respond(null, { result: Number(msg.number1) + Number(msg.number2)});
+  this.add('ms:adder', function (req, respond) {
+    console.log('req', req);
+    respond(null, { result: Number(req.query.number1) + Number(req.query.number2)});
   });
 }
 
